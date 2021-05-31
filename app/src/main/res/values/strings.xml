@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">AndroidCase</string>
+    <string name="search">Ürün aramak için...</string>
+    <string name="loading">Loading</string>
+    <string name="new_item">EN YENİ ÜRÜNLER</string>
+    <string name="item_all">TÜMÜ --></string>
+    <string name="category">KATEGORİLER</string>
+    <string name="collections">KOLLEKSİYONLAR</string>
+    <string name="go_vitrin">VİTRİN --></string>
+    <string name="editor">EDİTÖRÜN SEÇİMİ</string>
+    <string name="new_vitrin">YENİ VİTRİNLER</string>
+    <string name="item">%d ÜRÜN</string>
+
+</resources>

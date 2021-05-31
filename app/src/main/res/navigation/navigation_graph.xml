@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/splashFragment">
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.androidcase.ui.fragment.splash.SplashFragment"
+        android:label="SplashFragment" >
+        <action
+            android:id="@+id/action_splashFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.androidcase.ui.fragment.home.view.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_newestProductsFragment"
+            app:destination="@id/newestProductsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_collectionsFragment"
+            app:destination="@id/collectionsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_editorChoiceFragment"
+            app:destination="@id/editorChoiceFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_newestShowcaseFragment"
+            app:destination="@id/newestShowcaseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newestProductsFragment"
+        android:name="com.example.androidcase.ui.fragment.newest_products.NewestProductsFragment"
+        android:label="NewestProductsFragment" >
+        <action
+            android:id="@+id/action_newestProductsFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/collectionsFragment"
+        android:name="com.example.androidcase.ui.fragment.collections.CollectionsFragment"
+        android:label="CollectionsFragment" >
+        <action
+            android:id="@+id/action_collectionsFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editorChoiceFragment"
+        android:name="com.example.androidcase.ui.fragment.editor_choice.EditorChoiceFragment"
+        android:label="EditorChoiceFragment" >
+        <action
+            android:id="@+id/action_editorChoiceFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newestShowcaseFragment"
+        android:name="com.example.androidcase.ui.fragment.newest_showcase.NewestShowcaseFragment"
+        android:label="NewestShowcaseFragment" >
+        <action
+            android:id="@+id/action_newestShowcaseFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+</navigation>

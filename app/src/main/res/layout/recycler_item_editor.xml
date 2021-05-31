@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardEditor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginBottom="5dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="2dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="53dp"
+            android:layout_height="53dp"
+            android:layout_alignParentTop="false"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:elevation="3dp"
+            android:src="@drawable/ic_baseline_search_24"
+            app:layout_anchorGravity="top|center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtEditorTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgLogo"></TextView>
+
+        <TextView
+            android:id="@+id/txtEditorSub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/dark_gray"
+            app:layout_constraintBottom_toTopOf="@+id/imgOne"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtEditorTitle"></TextView>
+
+        <ImageView
+            android:id="@+id/imgOne"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toTopOf="@+id/btnVitrin"
+            app:layout_constraintEnd_toStartOf="@id/imgTwo"
+            app:layout_constraintStart_toStartOf="@+id/txtEditorSub"
+            app:layout_constraintTop_toBottomOf="@+id/txtEditorSub"></ImageView>
+
+        <ImageView
+            android:id="@+id/imgTwo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="5dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toTopOf="@+id/btnVitrin"
+            app:layout_constraintEnd_toStartOf="@id/imgThree"
+            app:layout_constraintStart_toEndOf="@+id/imgOne"
+            app:layout_constraintTop_toBottomOf="@+id/txtEditorSub"></ImageView>
+
+        <ImageView
+            android:id="@+id/imgThree"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toTopOf="@+id/btnVitrin"
+            app:layout_constraintEnd_toEndOf="@+id/txtEditorSub"
+            app:layout_constraintStart_toEndOf="@+id/imgTwo"
+            app:layout_constraintTop_toBottomOf="@+id/txtEditorSub"></ImageView>
+
+        <Button
+            android:id="@+id/btnVitrin"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/editor_button_background"
+            android:text="@string/go_vitrin"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgTwo" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
